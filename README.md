@@ -13,7 +13,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 2.0.0"
+      version = "3.15.0"
     }
   }
 }
@@ -23,7 +23,7 @@ provider "azurerm" {
 }
 
 module "resource_group" {
-  source = "github.com/PureGymGroup/terraform-azurerm-resource-group?ref=v0.1.0"
+  source = "github.com/PureGymGroup/terraform-azurerm-resource-group?ref=v1.0.0"
 
   name     = "testrg"
   location = "North Europe"
